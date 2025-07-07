@@ -2,14 +2,14 @@ import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [state, setState] = useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>{state}</h1>
+      <h1>{count}</h1>
       <button
         onClick={() => {
-          setState(state + 1);
+          setCount(count + 1);
         }}
       >
         +
